@@ -20,7 +20,6 @@ pub fn sub_sort(x: &mut [u32], up: bool) {
 
 fn compare_and_swap(x: &mut [u32], up: bool) {
     let mid_point = x.len() / 2;
-    // TODO: 0..mid_point記法をおさらいする
     for i in 0..mid_point {
         if (x[i] > x[mid_point + i]) == up {
             x.swap(i, mid_point + i);
