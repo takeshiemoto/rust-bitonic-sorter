@@ -1,5 +1,7 @@
 mod first;
+mod second;
 
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
+pub enum SortOrder {
+    Ascending,
+    Descending,
 }
